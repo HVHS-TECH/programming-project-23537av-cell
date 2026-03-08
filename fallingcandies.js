@@ -8,17 +8,24 @@
 // setup()
 /*******************************************************/
 function setup() {
-	cnv = new Canvas(750, 800);
-	circle = new Sprite(400,100, 200 );
-	console.log("setup: ");
 
+	cnv = new Canvas(750, 800);
+	 
+
+	
+	
+	console.log("setup: ");
+    
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	background('grey');
+
+	  
+	  
+	background('lightblue');
 	
 }
 
