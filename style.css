@@ -1,37 +1,50 @@
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
+/* Page setup */
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+
+    /* Sky background */
+    background-image:url("falling\ candy\ background.avif");
+    background-size:cover;
+    background-position:center;
+
+    font-family:Arial, sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.container {
-  display: flex;
-  gap: 20px;
+/* Start screen container */
+.start-screen{
+    text-align:center;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Game title */
+h1{
+    font-size:70px;
+    color:rgb(245, 237, 237);
+    text-shadow:3px 3px 6px rgba(0,0,0,0.4);
+    margin-bottom:40px;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  transition: background-color 0.3s;
-  width: 220px; /* Set a fixed width */
-  text-align: center;
+/* Start button */
+#startBtn{
+    padding:16px 45px;
+    font-size:24px;
+    background-color:#f346c8;
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+
+    box-shadow:0 5px 10px rgba(50,40,30.3);
+    transition:0.3s;
 }
 
-button:hover {
-  background-color: #0056b3;
+/* Button hover effect */
+#startBtn:hover{
+    background-color:#ff4fb0;
+    transform:scale(1.1);
 }

@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>fallingcandies</title>
+  <title>Falling Candies</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="background" href="falling candy background.avif">
-  
-  <!-- stylesheets *******************************************-->
-  <link rel="stylesheet" href="style.css">
- 
-  <!-- P5.js & P5.play ***************************************-->
-  <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
-<script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
 
-  <!-- JQUERY ************************************************-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/avif" href="faLL">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="fallingcandies.js"></script>
 </head>
 
-<!--*************************************************************
-  BODY
-**************************************************************-->
 <body>
-  <script src="fallingcandies.js"></script>
-  <button onclick="location.href='html/fallingcandies_keyboard.html'"fallingcandies</button>
+
+  <!-- Start Screen -->
+  <div id="startScreen">
+    <h1>Falling Candy </h1>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <!-- Game Area -->
+  <div id="gameArea">
+    <div id="candy"></div>
+    <div id = "score" >Score: 0</div>
+    press start button to start
     
-    <img src="falling candy background.avif" class = "cloud" ig="cloud">
+  </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js" integrity="sha512-bzpp8klYroR6PFgL3RJ+VkvY5hJna7Zd38OA56peUDHSNQpSiN9lDQVnMYtcw7hoAVhbR6mAOdH+ymzg1o+G0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.js" integrity="sha512-TU9AWtV5uUZPX8dbBAH8NQF1tSdigPRRT82vllAQ1Ke28puiqLA6ZVKxtUGlgrH6yWFnkKy+sE6luNEGH9ar0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://p5play.org/v3/planck.min.js"></script>
+  <script src="https://p5play.org/v3/p5play.js"></script>
 </body>
+
 </html>
-<!--*************************************************************
-  END OF fallingcandies.HTML
-**************************************************************-->
