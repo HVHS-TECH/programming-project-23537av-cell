@@ -8,43 +8,41 @@
 /*******************************************************/
 function setup() {
 
-	 cnv = new Canvas(700, 850);
-      basket = new Sprite(350, 800, 120, 20, 'k');
-      basket.color = 'blue';
-      score = 0;
-      candy.gravity.x = 5;
+   cnv = new Canvas(700, 850);
+   bucket = new Sprite(350, 800, 120, 20,'k');
+   bucket.color = 'blue';
+   score = 0;
 
-      candy = new Sprite(50,100, 10, 15, 'd');
-      candy.color = 'red';
-      candy.rotationSpeed = 2; 
+   candies = new Group();
 
-      
-      console.log("hello:score"+ FrameCount) ;
+    console.log("Hello: score + frameCount") ;
 } 
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-      // make a new candy sometimes
-    console.log("hello:score"+ FrameCount) ;
-    candies = new Sprite(random(10,650), 0, 10, 15, 'd');
-    candies.color = 'yellow';
-    candies.rotationSpeed = 2;
-    basket.x = mouse.x;
+    
+    console.log("Hello: score + frameCount") ;
 
-   if (candy.collides(bucket))
-    candy.remove();
-    score++;
+    if (frameCount% 60 ==0);
+    candy = new Sprite(random(50,800 ),0, 10, 15,'d');
+    candy.vel.y = 4;
+    candy.rotationSpeed = 2;
+    candies.add (candy);
 
-    candies = new Sprite(random(10,650), 0, 10, 15, 'd');
-    candies.color = 'yellow';
-    candies.rotationSpeed = 2;
-    basket.x = mouse.x;
+    bucket.x = mouse.x;
+    
+    
+    
+   
+   
 
-
-    }
+    
     background('skyblue');
+  
+    }
+    
 	
 
 /*******************************************************/
